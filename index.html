@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Local-tunnel</title>
+    <style>
+         @media (max-width:768px) {
+          body {
+            background-color: white;
+          }
+        } 
+      </style>
+</head>
+
+<body>
+    <div class="sm-flex md-flex ">
+    <header
+        class="p-10 items-center w-full bg-[url('https://theboroer.github.io/localtunnel-www/assets/images/pattern-on-picton-blue.png')]">
+        <div class="flex items-center">
+            <img src="data:image/png;base64,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"
+                alt="Logo" class="h-12 mr-4">
+            <h1 class="text-white text-4xl font-sans "><strong>localtunnel</strong></h1>
+        </div>
+    </header>
+    <header class="p-5 bg-sky-700 flex items-center w-full">
+        <h1 class="text-white text-2xl font-sans "><strong>Expose yourself to the world</strong></h1>
+    </header>
+    <div class="flex w-full h-screen">
+        <div class="text-1xl w-1/2 font-sans ">
+            <p class="mt-10 text-black"><strong>Localtunnel allows you to easily share a web service on your local
+                    development machine without messing with DNS and firewall settings.</strong></p>
+            <p class="mt-5 text-black">Localtunnel will assign you a unique publicly accessible url that will proxy all
+                requests to your locally running webserver.</p>
+            <h2 class="text-blue mt-10 text-2xl text-sky-800"><strong>Quickstart</strong></h2>
+            <p class="mt-5  text-black">Install Localtunnel globally (requires NodeJS) to make it accessible anywhere:
+            </p>
+            <div class="bg-cyan-50 mt-5 p-3 flex items-center rounded-xl">
+                <p class="italic text-black">$ npm install -g localtunnel</p>
+            </div>
+            <p class="mt-5  text-black">Start a webserver on some local port (eg http://localhost:8000) and use the
+                command line interface to request a tunnel to your local server:</p>
+            <div class="bg-cyan-50 mt-5 p-3 flex items-center rounded-xl">
+                <p class="italic text-black">$ lt --port 8000</p>
+            </div>
+            <p class="mt-5  text-black">You will receive a url, for example https://flkajsfljas.loca.lt, that you can
+                share with anyone for as long as your local instance of lt remains active. Any requests will be routed
+                to your local service at the specified port.</p>
+            <h3 class="text-blue mt-10 text-2xl text-sky-800"><strong>Features</strong></h3>
+            <div class="mt-5  text-black">
+                🔒 Secure https for all tunnels
+            </div>
+            <div class="mt-5  text-black">
+                🖥️ Show your work to anyone
+            </div>
+            <div class="mt-5  text-black">
+                🌐 Use API to test webhooks
+            </div>
+            <div class="mt-5  text-black">
+                ☁️ Test your UI in cloud browsers
+            </div>
+            <h3 class="text-blue mt-10 text-2xl text-sky-800"><strong>Developers</strong></h3>
+            <p class="mt-3 text-black">See the github page and wiki for information on clients in other languages and
+                the full API for the tunnel proxy.</p>
+        </div>
+        <div class="text-1xl w-1/2 font-sans  ">
+            <h4 class="text-blue mt-10 text-lg text-sky-800 "><strong>Sponsored by</strong></h4>
+            <p class="mt-2"><a href="https://tunez.com/" target="_blank" class="hover:underline transition duration-300">Tunez.com - music discovery made easy</a></p>
+            <h5 class="text-blue mt-8 text-lg text-sky-800"><strong>Maintained by</strong></h5>
+            <p class="mt-2"><a href="https://twitter.com/TheBoroer" target="_blank" class="hover:underline transition duration-300">@TheBoroer</a></p>
+            <p class="mt-2"><a href="https://twitter.com/defunctzombie" target="_blank" class="hover:underline transition duration-300">@defunctzombie</a></p>
+        </div>
+    </div>
+    <div class="flex flex-col min-h-screen">
+        <div class="flex-1">
+
+        </div>
+        <footer
+            class=" w-full items-center bg-[url('https://theboroer.github.io/localtunnel-www/assets/images/pattern-on-endeavour.png')]">
+            <img src="data:image/png;base64,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"
+                alt="Logo" class="h-12 mt-5">
+            <p class="text-right items-center mb-10 text-white mr-20 "><strong><a href="https://github.com/AnanyaKiran/local-tunnel.git" class="hover:underline transition duration-300" target="_blank">View the project on github</a></strong></p>
+        </footer>
+    </div>
+</div>
+</body>
+
+</html>
